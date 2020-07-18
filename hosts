@@ -1,0 +1,26 @@
+[master]
+# 如果部署单Master，只保留一个Master节点
+# 默认Naster节点也部署Node组件
+10.10.10.8 node_name=k8s-master01
+
+[node]
+10.10.10.9 node_name=k8s-node01
+10.10.10.10 node_name=k8s-node02
+
+[etcd]
+10.10.10.8 etcd_name=etcd-1
+10.10.10.9 etcd_name=etcd-2
+10.10.10.10 etcd_name=etcd-3
+
+[lb]
+# 如果部署单Master，该项忽略
+192.168.31.63 lb_name=lb-master
+192.168.31.71 lb_name=lb-backup
+
+[k8s:children]
+master
+node
+
+[newnode]
+#192.168.31.91 node_name=k8s-node3
+
