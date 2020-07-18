@@ -18,7 +18,7 @@
 
 **单Master架构图**
 
-![single-master](/Users/calvin/Desktop/ansible-install-k8s/assets/single-master.jpg)
+![single-master](assets/single-master.jpg)
 
 **单Master服务器规划**
 
@@ -140,7 +140,7 @@ cert_hosts:
 ```
 命令结束后，可以看到生成了访问令牌
 
-![image-20200718230920066](/Users/calvin/Desktop/ansible-install-k8s/assets/image-20200718230920066.png)
+![image-20200718230920066](assets/image-20200718230920066.png)
 
 ```shell
 eyJhbGciOiJSUzI1NiIsImtpZCI6IjFhMTN5LXdUVFN6TVVoNmZ1dUltVngyTmxvMXNKejFTYkZkbldaNWhWdXcifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlcm5ldGVzLWRhc2hib2FyZCIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJkYXNoYm9hcmQtYWRtaW4tdG9rZW4tcXRyNmwiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC5uYW1lIjoiZGFzaGJvYXJkLWFkbWluIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQudWlkIjoiYWY5YWIyNmMtN2MwZC00MTZkLWJhYmMtZTMwMWY5MDBmMjU0Iiwic3ViIjoic3lzdGVtOnNlcnZpY2VhY2NvdW50Omt1YmVybmV0ZXMtZGFzaGJvYXJkOmRhc2hib2FyZC1hZG1pbiJ9.4gRDjg8It_8h0LInLHXrchsUCcdH0UerDDkCdd2y_UnKwc6wAhReDQYc2NaYVda2704Hu7-n7_fXFATQ_bf6noBjoQNsCEJ1NwBl0DO4h3l_i80YIVT9R2yl1nEq6CY5Da7rR01pp6-Htih1mpEb-O_xsP_L6FrsVjKBubY63gK4O9LQLQSnoEE-24ggg2VgyS5rVHTTDlEpq3J0XeqXiBbaZJa8o65Yg08sKzeHAffgY2538p-9ZV5-tJAsL4wbud8TjSXCzWkxsVsmH7Au0ZwRrth1tVrVEqoPGOusDVu6sFxSO53lpwsvlcg1TpKIxNMEbDTQ6GSJbPA_dyeW9Q
@@ -154,11 +154,11 @@ eyJhbGciOiJSUzI1NiIsImtpZCI6IjFhMTN5LXdUVFN6TVVoNmZ1dUltVngyTmxvMXNKejFTYkZkblda
 
 随便访问任何一个节点，https://Node:30001
 
-![image-20200718231233862](/Users/calvin/Desktop/ansible-install-k8s/assets/image-20200718231233862.png)
+![image-20200718231233862](assets/image-20200718231233862.png)
 
 进入页面后，点击左侧导航栏Nodes，可以看到目前加入k8s的服务器节点。
 
-![image-20200718231355987](/Users/calvin/Desktop/ansible-install-k8s/assets/image-20200718231355987.png)
+![image-20200718231355987](assets/image-20200718231355987.png)
 
 
 
@@ -191,15 +191,15 @@ web          NodePort    10.0.0.95    <none>        80:30794/TCP   38s
 
 #### 3、Dashboard查看运行容器
 
-![image-20200718232547965](/Users/calvin/Desktop/ansible-install-k8s/assets/image-20200718232547965.png)
+![image-20200718232547965](assets/image-20200718232547965.png)
 
 可以看到测试用的web容器已经启动，查看容器日志
 
-![image-20200718232658162](/Users/calvin/Desktop/ansible-install-k8s/assets/image-20200718232658162.png)
+![image-20200718232658162](assets/image-20200718232658162.png)
 
 浏览器访问：http://10.10.10.9:30794/
 
-![image-20200718232858065](/Users/calvin/Desktop/ansible-install-k8s/assets/image-20200718232858065.png)
+![image-20200718232858065](assets/image-20200718232858065.png)
 
 
 
